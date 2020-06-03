@@ -20,9 +20,4 @@ class SystemController extends Controller
     {
         return view('pages.register');
     }
-
-    public function settings()
-    {
-        echo 'Settings page';
-    }
 }
