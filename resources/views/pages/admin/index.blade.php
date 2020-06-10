@@ -2,7 +2,7 @@
 
 @section('title','Welcome')
 @section('content')
-    <h4><small>RECENT POSTS</small></h4>
+    <h4><small>Admin Page</small></h4>
     <hr>
     <h2>I Love Food</h2>
     <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>

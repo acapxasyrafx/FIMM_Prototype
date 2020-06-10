@@ -14,7 +14,13 @@
 //System
 Route::get('/', 'SystemController@home')->name('system.home');
 Route::get('/login', 'SystemController@login')->name('system.login');
-Route::get('/register','SystemController@register')->name('system.register');
+//Route::get('/register','SystemController@register')->name('system.register');
+
+Route::prefix('register')->group(function() {
+    Route::get('/','SystemController@register')->name('system.register');
+    Route::get('/company','CompanyController@create')->name('company.create');
+    Route::post('/company','CompanyController@store')->name('company.store');
+});
 
 //Admin
 Route::prefix('admin')->group(function(){
