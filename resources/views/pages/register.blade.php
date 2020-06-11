@@ -19,12 +19,12 @@
     <div class="col">
         <div class="col-md-6">
             <div class="grey-box well">
-                <h3 class="text"><a href="#">Consultant</a></h3>
+                <h3 class="text"><a href="{{ route('register.create',['type'=>'consultant']) }}">Consultant</a></h3>
             </div>
         </div>
         <div class="col-md-6">
             <div class="grey-box well">
-                <h3 class="text"><a href="{{ route('company.create') }}">Company</a></h3>
+                <h3 class="text"><a href="{{ route('register.create',['type'=>'company']) }}">Company</a></h3>
             </div>
         </div>
     </div>

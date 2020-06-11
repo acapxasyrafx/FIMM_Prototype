@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class RegistrationController extends Controller
 {
     public function index()
     {
-        return view('pages.admin.index');
+        return view('pages.register');
     }
 
     public function create($type)
@@ -77,9 +77,9 @@ class AdminController extends Controller
                 dd(\Input::all());
             });
 
-            return view('pages.company.registration', compact('form'));
+            return view('pages.registration.company', compact('form'));
         } elseif ($type == 'consultant') {
-            echo 'Consultant Registration';
+            return view('pages.registration.consultant');
         }
     }
 
